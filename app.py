@@ -9,10 +9,9 @@ from dash import dcc, html
 import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output, State
 
-# Set your OpenAI API key
+
 openai.api_key = "your-api-key-here"
 
-# Initialize server and app
 server = Flask(__name__)
 app = dash.Dash(__name__, server=server, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
